@@ -9,7 +9,7 @@
 	<button type="button" onclick="writeIT()">write hello</button>
     <button type="button" onclick="readIT()">Read file</button>
         <script type="text/javascript" src="cordova.js">
-		 document.addEventListener('deviceready', onDeviceReady, false);
+		document.addEventListener('deviceready', onDeviceReady, false);
 function onDeviceReady(){
   var size =0;
   window.requestFileSystem(LocalFileSystem.PERSISTENT, size, onFSsuccess, onFSerror);
@@ -78,20 +78,6 @@ function onGetWriter(myWriter) {
    myWriter.seek(myWriter.length);
    myWriter.write(str);
 }
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		</script>
-    </body>
-</html>
+	    </script>
+	</body>
+</html> 
